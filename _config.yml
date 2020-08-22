@@ -1,1 +1,11 @@
-theme: jekyll-theme-slate
+# Site settings
+title: trnbtl
+email: trnbtl@posteo.de
+author: Daniel Kwittung
+description: Welcomepage for the TRNBTL community
+url: trnbtl.githup.io
+
+# Social icons
+show_social_icons: false
+
+exclude: [/backup]
