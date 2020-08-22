@@ -183,6 +183,31 @@ a:hover,a:focus {
 				letter-spacing:3px;
 	}
 }
+
+
+.mini-intro {
+	display:table;
+	width:100%;
+	height:auto;
+	padding:100px 0 100px 0;
+	text-align:center;
+	color:#fff;
+	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('../img/hspu.jpg');
+	
+	background-position: 0px -300px;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	-o-background-size:cover;
+}
+
+@media(min-width:768px) {
+	.mini-intro {
+			height:10vh;
+			padding:0;
+	}
+}
+
 .btn-circle {
 	width:50px;
 	height:50px;
