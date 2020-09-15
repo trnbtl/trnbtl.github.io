@@ -1,4 +1,5 @@
 /*
+Adapted from: 
 Template Name: Aries HTML
 Copyright: wowthemesnet, https://www.wowthemes.net, https://bootstrapstarter.com/
 */
@@ -15,9 +16,9 @@ html {
 	height:100%;
 }
 h1,h2,h3,h4,h5,h6 {
-	margin:0 0 35px;
+	margin:0 0 25px;
 	text-transform:uppercase;
-	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:"Exo 2",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:700;
 	letter-spacing:1px;
 }
@@ -32,10 +33,13 @@ dt {
 	/* text-transform:uppercase; */
 }
 
+dd {
+	margin-bottom: 3vh;
+}
+
 hr {
 	margin: 40px 0 40px;
 }
-
 
 ol {
 	list-style: none;
@@ -183,7 +187,7 @@ a:hover,a:focus {
 	}
 }
 .intro {
-	display:table;
+	display:grid;
 	width:100%;
 	height:auto;
 	padding:100px 0 100px 0;
@@ -195,10 +199,7 @@ a:hover,a:focus {
 	background-size:cover;
 	-o-background-size:cover;
 }
-.intro .intro-body {
-	display:table-cell;
-	vertical-align:middle;
-}
+
 .intro .intro-body .brand-heading {
 	font-size:40px;
 }
@@ -210,19 +211,27 @@ a:hover,a:focus {
 			height:100vh;
 			padding:0;
 	}
+	.intro .intro-body {
+		display:table-cell;
+		vertical-align:middle;
+		margin-top: 10vh;
+	}
+
 	.intro .intro-body .brand-heading {
 			font-size:60px;
-			margin-top:90px;
-			margin-bottom:20px;
+			letter-spacing:10px;
+			margin-top:0px;
+			margin-bottom:10px;
 			border-top:2px solid #fff;
 			border-bottom:2px solid #fff;
 			display:inline-block;
 			padding:7px 0;
 	}
+
 	.intro .intro-body .intro-text {
-			font-size:20px;
-				font-weight:300;
-				letter-spacing:3px;
+		font-size:20px;
+		font-weight:300;
+		letter-spacing:1.3px;
 	}
 }
 
@@ -344,32 +353,37 @@ a:hover,a:focus {
 	color:#000;
 	background-color:#42dca3;
 }
-ul.banner-social-buttons {
-	margin-top:0;
-}
-@media(max-width:1199px) {
-	ul.banner-social-buttons {
-			margin-top:15px;
-	}
-}
+
 @media(max-width:767px) {
-	ul.banner-social-buttons li {
-			display:block;
-			margin-bottom:20px;
-			padding:0;
+	.intro {
+		height:100vh;
+		padding:0;
 	}
-	ul.banner-social-buttons li:last-child {
-			margin-bottom:0;
+
+	.intro .intro-body {
+		/* display:table-cell; */
+		/* vertical-align:middle; */
+		margin-top: -8vh;
 	}
+
 	.intro .intro-body .brand-heading {
 		font-size:40px;
+		letter-spacing:10px;
+		margin-top:0px;
 		margin-bottom:5px;
+		border-top:2px solid #fff;
+		border-bottom:2px solid #fff;
+		display:inline-block;
+		padding:5px 0;
 	}
+
+	
 	.intro .intro-body .intro-text {
-		margin-bottom:0;
 		font-size:14px;
+		font-weight:400;
 		letter-spacing:1px;
 	}
+
 	.navbar-custom {
 		background-color:#fff;
 	}
@@ -380,6 +394,7 @@ ul.banner-social-buttons {
 		padding:100px 0 50px 0;
 	}
 }
+
 footer {
 	padding:40px 0;
 	z-index:1;
