@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+  {% include head.html %}
+  <body>
+    {% include intro.html %} 
+    {% include page.html %} 
+    
+    {% comment %}
+    {% include about.html %} 
+    {% include portfolio.html %} 
+    {% include navbar.html %}
+    {{ content }}
+    {% endcomment %}
+
+    {% include footer.html %}
+  </body>
+</html>
+
+
